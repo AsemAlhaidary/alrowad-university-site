@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الرئيسية | جامعة الرواد</title>
+  <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/script.js" defer></script>
+</head>
+<body dir="rtl">
+  <input type="checkbox" id="toggle-theme">
+  <input type="checkbox" id="toggle-navbar">
+  <main class="main">
+    <!-- *** header start *** -->
+    <header class="header">
+      <a href="/" class="logo">
+        <img src="/assets/img/logo.png" alt="Logo">
+      </a>
+      <menu class="header-menu">
+        <a href="/en/index.html" class="language">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 21 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" fill="var(--accent-color)"/></svg>
+        </a>
+        <label for="toggle-theme" class="switch-theme">
+          <span class="dark">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" fill="var(--accent-color)"/></svg>
+          </span>
+          <span class="light">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" fill="var(--accent-color)"/></svg>
+          </span>
+        </label>
+        <label for="toggle-navbar" class="open-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="menu-item">
+              <a href="#hero" class="item">الرئيسية</a>
+            </li>
+            <li class="menu-item">
+              <a href="#about" class="item">عن الجامعة</a>
+            </li>
+            <li class="menu-item">
+              <a href="#collages" class="item">الكليات</a>
+            </li>
+            <li class="menu-item">
+              <a href="#news" class="item">الأخبار</a>
+            </li>
+          </ul>
+          <a href="#register" class="button-grad">سجل الآن</a>
+        </nav>
+      </menu>
+    </header>
+    <!-- *** header end *** -->
+
+    <!-- *** hero start *** -->
+    <div class="hero" id="hero">
+      <div class="content-view aos">
+        <div class="content">
+          <div class="text">
+            <h1 class="title"><span class="first-line">جامعة الرواد</span> طريقك نحو الريادة</h1>
+            <p class="desc">التميز والريادة في التعليم والبحث العلمي وخدمة المجتمع وفق متطلبات أنظمة الجودة المحلية والإقليمية والاعتماد الأكاديمي.</p>
+          </div>
+          <div class="call-to-action">
+            <a href="#register" class="button-primary">سجل الآن</a>
+            <a href="#about" class="button-secondary">عن الجامعة</a>
+          </div>
+          <div class="contact-info">
+            <a href="mailto:info@alrowaduni.edu.ye" class="info email">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" fill="var(--accent-color)"/></svg>
+              </span>info@alrowaduni.edu.ye</a>
+            <a href="tel:04246048/49/59" class="info phone-num">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" fill="var(--accent-color)"/></svg>
+            </span>04246048/49/59</a>
+            <a href="tel:+967772035079" class="info phone-num">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" fill="var(--accent-color)"/></svg>
+            </span>+967772035079</a>
+          </div>
+        </div>
+      </div>
+      <div class="img-view aos">
+        <div class="gallery">
+          <div class="slider-view">
+            <div class="slider">
+              <img src="/assets/img/slider/sl01.jpg" alt="Image" class="img-slide" lazyload>
+              <img src="/assets/img/slider/sl02.jpg" alt="Image" class="img-slide" lazyload>
+              <img src="/assets/img/slider/sl03.jpg" alt="Image" class="img-slide" lazyload>
+              <img src="/assets/img/slider/sl04.jpg" alt="Image" class="img-slide" lazyload>
+              <img src="/assets/img/slider/sl01.jpg" alt="Image" class="img-slide" lazyload>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-down">
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" fill="var(--accent-color)"/></svg>
+          </span>
+        </div>
+        <div class="decorators"></div>
+      </div>
+    </div>
+    <!-- *** hero end *** -->
+
+    <!-- *** about start *** -->
+    <div class="about" id="about">
+      <div class="img-view aos">
+        <img src="/assets/img/about.jpg" alt="About Us" lazyload>
+      </div>
+      <div class="content-view aos">
+        <h3 class="sect-define">عن الجامعة</h3>
+        <h2 class="title">أهم الخدمات التي تقدمها الجامعة</h2>
+        <div class="info">
+          <p class="know-more">تعرف على: <span class="terms">رؤيتنا - مهمتنا - اهدافنا - رسالة رئيس الجامعة</span></p>
+        </div>
+        <a href="/about.html" class="button-secondary">اعرف المزيد</a>
+      </div>
+    </div>
+    <!-- *** about end *** -->
+
+    <!-- *** collages start *** -->
+    <div class="collages" id="collages">
+      <div class="content-view aos">
+        <h3 class="sect-define">الكليات</h3>
+        <h2 class="title">كليات رائدة ومهنية</h2>
+        <a href="#register" class="button-secondary">انظم لنا الآن</a>
+      </div>
+      <div class="collage-view">
+        <ul class="collage-list">
+          <li class="collage-item aos">
+            <img src="/assets/img/collages/engineer.jpg" alt="Engineer" class="img" lazyload>
+            <h4 class="collage-name">كلية العلوم  و الهندسة</h4>
+            <p class="collage-desc">تقديم برامج تعليمية متميزة للطلبة بهدف إعداد خريجين كفوئين في تخصصات العلوم والهندسة لتلبية حاجات السوق المحلي والإقليمي والدولي ، وتشجيع البحث العلمي وخدمة المجتمع لأعضاء هيئة التدريس و الطلبة.</p>
+            <a href="/collages/engineer.html" class="more-info">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" fill="var(--accent-color)"/></svg>
+            </a>
+          </li>
+          <li class="collage-item aos">
+            <img src="/assets/img/collages/medical.jpg" alt="Medical" class="img" lazyload>
+            <h4 class="collage-name">كلية العلوم الطبية</h4>
+            <p class="collage-desc">التميز التعليمي في العلوم الطبية من خلال تقديم برامج متميزة أكاديميا علي المستويين المحلي و الإقليمي ، وإعداد كوادر مؤهلة قادرة على الارتقاء بمستوى السلوك الصحي في المجتمع و اثراء الأبحاث العلمية.</p>
+            <a href="/collages/medical.html" class="more-info">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" fill="var(--accent-color)"/></svg>
+            </a>
+          </li>
+          <li class="collage-item aos">
+            <img src="/assets/img/collages/finance.jpg" alt="Finance" class="img" lazyload>
+            <h4 class="collage-name">كلية المال والاعمال</h4>
+            <p class="collage-desc">تقديم برامج تعليمية متميزة للطلبة بهدف إعداد خريجين كفوئين في تخصصات الاقتصاد والعلوم الإدارية لتلبية حاجات السوق المحلي والإقليمي والدولي ، وتشجيع البحث العلمي وخدمة المجتمع لأعضاء هيئة التدريس و الطلبة.</p>
+            <a href="/collages/finance.html" class="more-info">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" fill="var(--accent-color)"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- *** collages end *** -->
+
+    <!-- *** news start *** -->
+    <div class="news" id="news">
+      <div class="content-view aos">
+        <h3 class="sect-define">الأخبار</h3>
+      </div>
+      <div class="news-view">
+        <ul class="news-list">
+          <li class="news-item aos">
+            <div class="background">
+              <img src="/assets/img/news/ne01.jpg" alt="New Image" class="news-img" lazyload>
+            </div>
+            <div class="content">
+              <h4 class="title">مباراة كرة القدم</h4>
+              <p class="desc">دشنت جامعة الرواد النشاط الرياضي على ملعب جامعة تعز حيثُ كانت المُباراة الأولى بين موظفي الجامعة وطلاب قسم الصيدله حيثُ ساد المُباراه الروح الرياضيه والتقارب بين أعضاء الهيئة الادارية والطلاب. حيث كانت مُباراة الإفتتاح بين فريقي موظفي الجامعه * قسم الصيدله م3 وانتهت المُباراه ب 3/1 لصالح فريق قسم الصيدله م3 والمُباراه الثانيه كانت بين فريقي هندسة مُعدات طبيه م2 * طب الأسنان م3 وانتهت المُباراه 3/1 لصالح قسم طب الاسنان م3 والمُباراه الثالثه كانت بين فريقي هندسة مُعدات طبيه م1 * طب الاسنان وانتهت المُباراه 2/0 لصالح قسم هندسة مُعدات طبيه م1 #جامعة_الرواد_طريقكَ_نحو_الريادة
+              </p>
+              <a href="#" class="read-more">إقرأ المزيد</a>
+            </div>
+          </li>
+          <li class="news-item aos">
+            <div class="background">
+              <img src="/assets/img/news/ne02.jpg" alt="New Image" class="news-img" lazyload>
+            </div>
+            <div class="content">
+              <h4 class="title">فتح بوابة الطلبة لتسجيل المقررات</h4>
+              <p class="desc">تعلن إدارة الدعم الفني في جامعة الرواد عن افتتاح بوابة الطلبة الإلكترونية للفصل الثاني من العام الجامعي 2023/2022م ومكوناتها والفوائد التي تقدمها للطالب الجامعي . ● ويتكون النظام من الٱتي: ◇ استعراض معلومات الطالب. ◇ الإطلاع على الخطة الدراسية. ◇ إدارة المقررات الدراسية (طلب تسجيل وحذف مقرر دراسي). ◇ الاطلاع على علامات الطالب الجامعي. 🙏تمنياتنا لجميع الطلبة بالتوفيق. ---------------------------------- جامعة الرواد _ طريقك نحو الريادة تعز - حبيل سلمان 04246048 - 0772 035 079
+              </p>
+              <a href="#" class="read-more">إقرأ المزيد</a>
+            </div>
+          </li>
+          <li class="news-item aos">
+            <div class="background">
+              <img src="/assets/img/news/ne03.jpg" alt="New Image" class="news-img" lazyload>
+            </div>
+            <div class="content">
+              <h4 class="title">سجل في العام الدراسي الجديد 2022/2023م</h4>
+              <p class="desc">تعلن جامعة الرواد عن استمرار فتح باب القبول والتسجيل للعام الجامعي 2023/2022م فعلى الراغبين الالتحاق بالجامعة سرعة التسجيل واختبار تحديد المستوى في اللغة الإنجليزية نتمنى لكم التوفيق دوماً طلابنا الكرام ودمتم رواداً للمستقبل .
+              </p>
+              <a href="#" class="read-more">إقرأ المزيد</a>
+            </div>
+          </li>
+          <li class="news-item aos">
+            <div class="background">
+              <img src="/assets/img/news/ne04.jpg" alt="New Image" class="news-img" lazyload>
+            </div>
+            <div class="content">
+              <h4 class="title">الفصل الصيفي</h4>
+              <p class="desc">تعلن جامعة الرواد عن استمرار فتح باب القبول والتسجيل في الجامعة للفصل الصيفي من العام الجامعي 2023/2022م فعلى الراغبين الالتحاق بالجامعة سرعة التسجيل واختبار تحديد المستوى في اللغة الإنجليزية نتمنى لكم التوفيق دوماً طلابنا الكرام -- يمكن للطالب خلال الفصل الصيفي ان يقوم باختيار نصف المقررات التي يمكن دراستها خلال الفصل الدراسي، حيث يعتبر هذا الفصل اختياري للطلبة --
+              </p>
+              <a href="#" class="read-more">إقرأ المزيد</a>
+            </div>
+          </li>
+          <li class="news-item aos">
+            <div class="background">
+              <img src="/assets/img/news/ne05.png" alt="New Image" class="news-img" lazyload>
+            </div>
+            <div class="content">
+              <h4 class="title">حفل استقبال الطلبة المستجدين للعام 2021/2022</h4>
+              <p class="desc">برعاية جامعة الرواد تقيم عمادة شؤون الطلبة حفل استقبال الطلبة المستجدين للعام 2021/2022 وتكريم الطلبة المتميزين للعام 2020/2021 بالتوفيق لكم رواد المستقبل ...
+              </p>
+              <a href="#" class="read-more">إقرأ المزيد</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- *** news end *** -->
+
+    <!-- *** register start *** -->
+    <div class="register" id="register">
+      <div class="content-view aos">
+        <h3 class="sect-define">سجل الأن</h3>
+        <h2 class="title">سجل الأن وكن احد الرواد</p>
+      </div>
+      <div class="form-view aos">
+        <form class="form">
+          <span class="form-title">سجل الأن</span>
+          <label for="name" class="field">
+            <span class="field-name">الإسم</span>
+            <input type="text" class="input">
+          </label>
+          <label for="username" class="field">
+            <span class="field-name">إسم المستخدم</span>
+            <input type="text" class="input">
+          </label>
+          <label for="email" class="field">
+            <span class="field-name">البريد الإلكتروني</span>
+            <input type="email" class="input">
+          </label>
+          <label for="password" class="field">
+            <span class="field-name">كلمة السر</span>
+            <input type="password" class="input">
+          </label>
+          <button type="submit" class="button-primary">تسجيل</button>
+        </form>
+      </div>
+    </div>
+    <!-- *** register end *** -->
+
+    <!-- *** footer start *** -->
+    <footer class="footer">
+      <div class="info-sect">
+        <div class="menus">
+          <menu type="context" class="footer-menu aos">
+            <h5 class="menu-title">الموقع</h5>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="#" class="item">الجمهورية اليمنية-تعز- حبيل سلمان - امام جامعة تعز</a>
+              </li>
+            </ul>
+          </menu>
+          <menu type="context" class="footer-menu aos">
+            <h5 class="menu-title">القائمة</h5>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="/" class="item">الرئيسية</a>
+              </li>
+              <li class="menu-item">
+                <a href="#about" class="item">عن الجامعة</a>
+              </li>
+              <li class="menu-item">
+                <a href="#collages" class="item">الكليات</a>
+              </li>
+              <li class="menu-item">
+                <a href="#news" class="item">الأخبار</a>
+              </li>
+            </ul>
+          </menu>
+          <menu type="context" class="footer-menu">
+            <h5 class="menu-title">تواصل</h5>
+            <ul class="menu-list social">
+              <li class="menu-item">
+                <a href="https://www.youtube.com/channel/UC7Hc_TrOAXMp5n5JOaSuMFw" class="social-item youtube">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" fill="var(--accent-color)"/></svg>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="https://www.facebook.com/alrowad.uni/" class="social-item facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" fill="var(--accent-color)"/></svg>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="https://twitter.com/Alrowad_uni" class="social-item twitter">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" fill="var(--accent-color)"/></svg>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="https://www.instagram.com/alrowad.uni" class="social-item instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="var(--accent-color)"/></svg>
+                </a>
+              </li>
+            </ul>
+          </menu>
+        </div>
+        <div class="map-sect">
+          <img src="/assets/img/map.jpg" alt="Uneversity Location" class="map" lazyload>
+        </div>
+      </div>
+      <div class="copyright-sect">
+        <p class="copyright">&copy; جميع الحقوق محفوظة لجامعة الرواد 2021 ~ <script>document.write(new Date().getFullYear())</script></p>
+        <p class="developer">من تطوير <a href="#" class="developer-link">Asem Al-Haidary</a></p>
+      </div>
+    </footer>
+    <!-- *** footer end *** -->
+
+    <!-- *** to-top start *** -->
+    <div class="to-top">
+      <span class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" fill="var(--accent-color)"/></svg>
+      </span>
+    </div>
+    <!-- *** to-top end *** -->
+  </main>
+</body>
+</html>

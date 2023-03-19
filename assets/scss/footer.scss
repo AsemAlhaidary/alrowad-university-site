@@ -1,0 +1,109 @@
+.footer {
+  padding: var(--section-padding) var(--site-padding) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+  background-color: var(--secondary-color);
+
+  .info-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+    .menus {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+
+      .footer-menu {
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+
+        .menu-title {
+          font-size: 1em;
+          font-weight: 600;
+          text-align: center;
+          color: var(--primary-text-color);
+        }
+
+        .menu-list {
+          // padding-right: 1em;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &.social {
+            flex-direction: row;
+            gap: 0.4em;
+
+            .menu-item {
+              @include social-icons;
+            }
+          }
+
+          .menu-item {
+            max-width: 200px;
+            text-align: center;
+            line-height: 1.4;
+
+            .item {
+              font-size: 0.8em;
+              font-weight: 400;
+              color: var(--secondary-text-color);
+
+              &:hover,
+              &:focus {
+                color: var(--secondary-accent-color);
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .map-sect {
+      .map {
+        @include image-setting($radius:var(--card-radius));
+      }
+    }
+  }
+
+  .copyright-sect {
+    padding: 2em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5em;
+
+    .developer,
+    .copyright {
+      font-size: 0.6em;
+      font-weight: 300;
+      color: var(--secondary-text-color);
+    }
+
+    .developer {
+      .developer-link {
+        font-weight: 700;
+        color: var(--accent-color);
+
+        &:hover,
+        &:focus {
+          color: var(--secondary-accent-color);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

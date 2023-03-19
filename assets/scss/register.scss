@@ -1,0 +1,65 @@
+.register {
+  padding: var(--section-padding) var(--site-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+
+  .content-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    .sect-define {
+      @include section-define;
+      text-align: center;
+    }
+
+    .title {
+      @include section-title;
+      text-align: center;
+    }
+  }
+
+  .form-view {
+    .form {
+      padding: 2em;
+      max-width: 400px;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4em;
+      border-radius: var(--card-radius);
+      background-color: var(--secondary-color);
+      @include shadow;
+
+      .form-title {
+        align-self: center;
+        font-weight: 600;
+        font-size: 2em;
+        color: var(--accent-color);
+      }
+
+      .field {
+        display: flex;
+        flex-direction: column;
+
+        .field-name {
+          font-weight: 500;
+          font-size: 0.8em;
+          color: var(--primary-text-color);
+        }
+
+        .input {
+          @include input-field;
+        }
+      }
+
+      button {
+        margin-top: 1.5em;
+      }
+    }
+  }
+}

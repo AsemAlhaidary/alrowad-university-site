@@ -1,0 +1,70 @@
+.message {
+  padding: var(--section-padding) var(--site-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+  background-color: var(--secondary-color);
+
+  .content-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .title {
+      @include section-title;
+      text-align: center;
+
+      .headmaster {
+        display: block;
+      }
+    }
+  }
+
+  .blockquote {
+    position: relative;
+    margin: 2em 0;
+    padding: 4em 2em 4em 3em;
+    font-style: italic;
+    font-weight: 400;
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+    border-right: 4px solid var(--accent-color);
+    @include shadow;
+
+    &::before,
+    &::after {
+      position: absolute;
+      height: 0;
+      font-family: sans-serif;
+      font-size: 6em;
+    }
+
+    &::before {
+      content: "\201c";
+      top: 0.1em;
+      left: 0.2em;
+    }
+
+    &::after {
+      content: "\201d";
+      right: 0.3em;
+      bottom: 0.6em;
+    }
+
+    .message-text {
+      margin-bottom: 1em;
+    }
+
+    .blockquote-footer {
+      padding: 0 2em 0 0;
+      text-align: left;
+      font-size: 1em;
+
+      &::before {
+        content: "\2013";
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.news {
+  padding: var(--section-padding) var(--site-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+  background-color: var(--secondary-color);
+
+  .content-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .sect-define {
+      @include section-define;
+    }
+  }
+
+  .news-view {
+    width: 100%;
+
+    .news-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 2em;
+
+      .news-item {
+        --background-height: 40%;
+        max-width: 400px;
+        aspect-ratio: 8/9;
+        border-radius: var(--card-radius);
+        background-color: var(--primary-color);
+        @include shadow;
+        overflow: hidden;
+
+        .background {
+          height: var(--background-height);
+
+          .news-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+
+        .content {
+          padding: 1.5em;
+          height: calc(100% - var(--background-height));
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1.5em;
+          // justify-content: space-between;
+
+          .title {
+            font-size: 1em;
+            font-weight: 600;
+            color: var(--primary-text-color);
+          }
+
+          .desc {
+            font-size: 0.8em;
+            font-weight: 400;
+            color: var(--secondary-text-color);
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
+          }
+
+          .read-more {
+            font-size: 0.8em;
+            font-weight: 400;
+            text-decoration: underline;
+            color: var(--accent-color);
+            align-self: flex-end;
+
+            &:hover,
+            &:focus {
+              color: var(--secondary-accent-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}

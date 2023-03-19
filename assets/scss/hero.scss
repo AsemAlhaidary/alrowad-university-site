@@ -1,0 +1,156 @@
+.hero {
+  padding: var(--section-padding) var(--site-padding);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+
+  .content-view {
+    max-width: 80%;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .title {
+          font-weight: 600;
+          font-size: 2.5rem;
+          line-height: 1.2;
+          color: var(--primary-text-color);
+
+          .first-line {
+            display: block;
+            font-size: 3rem;
+            color: var(--accent-color);
+          }
+        }
+
+        .desc {
+          font-weight: 300;
+          font-size: 1em;
+          line-height: 1.5;
+          color: var(--secondary-text-color);
+        }
+      }
+
+      .call-to-action {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+        .info {
+          width: max-content;
+          display: flex;
+          align-items: center;
+          gap: 0.5em;
+          font-weight: 500;
+          font-size: 0.8em;
+          line-height: 1;
+          color: var(--primary-text-color);
+
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+
+          .icon {
+            display: flex;
+
+            svg {
+              height: calc(var(--icon-size) - 0.5em);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .img-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .gallery {
+      @include image-decorator;
+
+      .slider-view {
+        height: var(--img-size);
+        aspect-ratio: 1/1;
+        overflow: hidden;
+
+        .slider {
+          --show-time: 3s;
+          --move-time: 0.2s;
+          --img-count: 4;
+          --duration: calc((var(--img-count) * var(--show-time)) + ((var(--img-count) - 1) * var(--move-time)));
+          display: flex;
+          animation: hero-slider var(--duration) ease-in-out infinite;
+
+          .img-slide {
+            @include image-setting($radius:37% 63% 31% 69% / 69% 32% 68% 31%);
+          }
+
+          @keyframes hero-slider {
+            0% {
+              transform: translateX(0);
+            }
+
+            20% {
+              transform: translateX(0);
+            }
+
+            25% {
+              transform: translateX(100%);
+            }
+
+            45% {
+              transform: translateX(100%);
+            }
+
+            50% {
+              transform: translateX(calc(100% * 2));
+            }
+
+            70% {
+              transform: translateX(calc(100% * 2));
+            }
+
+            75% {
+              transform: translateX(calc(100% * 3));
+            }
+
+            95% {
+              transform: translateX(calc(100% * 3));
+            }
+
+            100% {
+              transform: translateX(calc(100% * 4));
+            }
+          }
+        }
+      }
+    }
+
+    .scroll-down {
+      align-self: flex-end;
+
+      .icon {
+        @include arrow-icon;
+      }
+    }
+  }
+}

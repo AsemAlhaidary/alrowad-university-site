@@ -1,0 +1,15 @@
+.to-top {
+  position: fixed;
+  bottom: var(--nav-height);
+  left: var(--site-padding);
+  transform: translateY(50vh);
+  z-index: 5;
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  .icon {
+    @include arrow-icon;
+  }
+}

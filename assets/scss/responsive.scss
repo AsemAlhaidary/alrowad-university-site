@@ -1,0 +1,106 @@
+@media screen and (min-width: 820px) {
+  .main {
+    .header {
+      .header-menu {
+        .open-menu {
+          display: none;
+        }
+
+        .navbar {
+          position: static;
+          padding: unset;
+          min-width: unset;
+          height: unset;
+          flex-direction: row;
+          transform: translateX(0);
+          box-shadow: unset;
+          background-color: unset;
+
+          .nav-menu {
+            flex-direction: row;
+
+            .menu-item {
+              width: unset;
+            }
+          }
+        }
+      }
+    }
+
+    .hero {
+      flex-direction: row;
+
+      .content-view {
+        max-width: 40%;
+      }
+    }
+
+    .about {
+      flex-direction: row;
+
+      .content-view {
+        max-width: 40%;
+      }
+    }
+
+    .collages {
+      .content-view {
+        max-width: 40%;
+        align-items: center;
+      }
+    }
+
+    .register {
+      .content-view {
+        align-items: center;
+      }
+    }
+
+    .aims {
+      .sect {
+        flex-direction: row;
+
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+
+        .text {
+          max-width: 50%;
+          align-items: right;
+
+          .title,
+          .desc {
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    .footer {
+      .info-sect {
+        flex-direction: row;
+      }
+
+      .copyright-sect {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .main {
+    --site-padding: 8vw;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .main {
+    --site-padding: 15vw;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  // A pointer required
+
+}

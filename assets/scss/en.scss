@@ -1,0 +1,39 @@
+:not([dir="rtl"]) {
+  @keyframes hero-slider {
+    0% {
+      transform: translateX(0);
+    }
+
+    20% {
+      transform: translateX(0);
+    }
+
+    25% {
+      transform: translateX(calc(100% * -1));
+    }
+
+    45% {
+      transform: translateX(calc(100% * -1));
+    }
+
+    50% {
+      transform: translateX(calc(100% * -2));
+    }
+
+    70% {
+      transform: translateX(calc(100% * -2));
+    }
+
+    75% {
+      transform: translateX(calc(100% * -3));
+    }
+
+    95% {
+      transform: translateX(calc(100% * -3));
+    }
+
+    100% {
+      transform: translateX(calc(100% * -4));
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.speech {
+  padding: var(--section-padding) var(--site-padding);
+
+  .text-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    .sect-title {
+      @include section-title;
+      text-align: center;
+    }
+
+    .sect-desc {
+      @include section-description;
+      text-align: center;
+    }
+  }
+}

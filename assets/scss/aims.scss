@@ -1,0 +1,49 @@
+.aims {
+  padding: var(--section-padding) var(--site-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+
+  .sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+    .img {
+      @include image-decorator($decorSpace:0);
+
+      img {
+        @include image-setting($radius:70% 30% 70% 30% / 30% 70% 30% 70%);
+      }
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+
+      .title {
+        @include section-title;
+        text-align: center;
+      }
+
+      .desc {
+        font-size: 1em;
+        font-weight: 400;
+        text-align: center;
+        color: var(--secondary-text-color);
+
+        li {
+          list-style-type: circle;
+          margin-right: 1em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.collages {
+  padding: var(--section-padding) var(--site-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+
+  .content-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    .sect-define {
+      @include section-define;
+      text-align: center;
+    }
+
+    .title {
+      @include section-title;
+      text-align: center;
+    }
+  }
+
+  .collage-view {
+    padding: 3em;
+    border-radius: calc(var(--card-radius) * 2);
+    background-color: var(--secondary-color);
+
+    .collage-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 2em;
+
+      .collage-item {
+        padding: 2em;
+        max-width: 300px;
+        aspect-ratio: 8/11;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1em;
+        background-color: var(--primary-color);
+        border-radius: var(--card-radius);
+        @include shadow;
+        overflow: hidden;
+
+        .img {
+          @include image-setting($height:60px, $radius:50%)
+        }
+
+        .collage-name {
+          font-size: 1em;
+          font-weight: 600;
+          color: var(--primary-text-color);
+        }
+
+        .collage-desc {
+          font-size: 0.8em;
+          font-weight: 400;
+          color: var(--secondary-text-color);
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 4;
+          overflow: hidden;
+        }
+
+        .more-info {
+          align-self: flex-end;
+          @include arrow-icon;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import 'font';
+@import 'variables';
+@import 'mixins';
+@import 'universal';
+
+@import 'controllers';
+
+.main {
+  @import 'header';
+  @import 'presenet';
+  @import 'speech';
+  @import 'message';
+  @import 'register';
+  @import 'footer';
+  @import 'totop';
+}
+
+@import 'responsive';

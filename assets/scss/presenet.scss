@@ -1,0 +1,45 @@
+.present {
+  position: relative;
+  height: 100vh;
+
+  .background {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include background("/assets/img/collages/software.jpg");
+
+    .content-view {
+      --text-width: 400px;
+      padding: 2em;
+      max-width: calc(100% - (var(--site-padding) * 2));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
+      border-radius: var(--card-radius);
+      @include transparent-background(#7b7b7b27);
+
+      .title {
+        max-width: var(--text-width);
+        @include section-title;
+        text-align: center;
+      }
+
+      .desc {
+        max-width: var(--text-width);
+        @include section-description;
+        text-align: center;
+      }
+
+      .call-to-action {
+        display: flex;
+        gap: 1em;
+      }
+    }
+  }
+
+  .waves {
+    @include waves;
+  }
+}
