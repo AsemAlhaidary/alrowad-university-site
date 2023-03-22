@@ -2,6 +2,8 @@
 
 This is a website for [Alrowad University](https://alrowaduni.edu.ye), I have introduced this design as a contributor in the final round at `Hathkon` contest, and with this design I've got the first place in this contest.
 
+![Alrowad](/assets/img/Alrowad%20University.jpg)
+
 ## Judgement Comity
 - Roain Alroainy
 - Adeeb Alqershi
